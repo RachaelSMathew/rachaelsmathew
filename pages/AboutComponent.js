@@ -15,7 +15,7 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import {motion} from 'framer-motion';
-import myPic from '../images/img.png';
+import myPic from '../images/img-2.png';
 import { createTheme, responsiveFontSizes } from '@mui/material/styles';
 import { Typography, ThemeProvider } from '@mui/material';
 import Image from 'next/image'
@@ -72,8 +72,7 @@ function About() {
             
             </Grid>
             <Grid item xs={4} sm={8} md={4}>
-            <Image src={myPic}  width={258} className="zIndexmyPic"
-            height={274}/>
+            <Image src={myPic}  className="zIndexmyPic" loading="lazy"/>
 
             </Grid>
             

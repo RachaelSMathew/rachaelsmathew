@@ -45,73 +45,73 @@ const Skills = () => {
                 <Grid item xs={2} sm={3} md={2}>
                 <motion.div whileHover={{scale:1.1}} transition={{type: 'spring', stiffness: 800}}>
                 <Image src={Java}  width={100}
-                height={100}/>
+                height={100} loading="lazy"/>
                 </motion.div>
                 </Grid>
                 <Grid item xs={2} sm={3} md={2}>
                 <motion.div whileHover={{scale:1.1}} transition={{type: 'spring', stiffness: 800}}>
                 <Image src={JavaScript}  width={100}
-                height={100}/>
+                height={100} loading="lazy"/>
                 </motion.div>
                 </Grid>
                 <Grid item xs={2} sm={3} md={2}>
                 <motion.div whileHover={{scale:1.1}} transition={{type: 'spring', stiffness: 800}}>
                 <Image src={Swift}  width={100}
-                height={100}/>
+                height={100} loading="lazy"/>
                 </motion.div>
                 </Grid>
                 <Grid item xs={2} sm={3} md={2}>
                 <motion.div whileHover={{scale:1.1}} transition={{type: 'spring', stiffness: 800}}>
                 <Image src={CSS}  width={100}
-                height={100}/>
+                height={100} loading="lazy"/>
                 </motion.div>
                 </Grid>
                 <Grid item xs={2} sm={3} md={2}>
                 <motion.div whileHover={{scale:1.1}} transition={{type: 'spring', stiffness: 800}}>
                 <Image src={SQL}  width={100}
-                height={100}/>
+                height={100} loading="lazy"/>
                 </motion.div>
                 </Grid>
                 <Grid item xs={2} sm={3} md={2}>
                 <motion.div whileHover={{scale:1.1}} transition={{type: 'spring', stiffness: 800}}>
                 <Image src={HTML5}  width={100}
-                height={100}/>
+                height={100} loading="lazy"/>
                 </motion.div>
                 </Grid>
                 <Grid item xs={2} sm={3} md={2}>
                 <motion.div whileHover={{scale:1.1}} transition={{type: 'spring', stiffness: 800}}>
                 <Image src={AWSCognito}  width={100}
-                height={100}/>
+                height={100} loading="lazy"/>
                 </motion.div>
                 </Grid>
                 <Grid item xs={2} sm={3} md={2}>
                 <motion.div whileHover={{scale:1.1}} transition={{type: 'spring', stiffness: 800}}>
                 <Image src={AWSS3}  width={100}
-                height={100}/>
+                height={100} loading="lazy"/>
                 </motion.div>
                 </Grid>
                 <Grid item xs={2} sm={3} md={2}>
                 <motion.div whileHover={{scale:1.1}} transition={{type: 'spring', stiffness: 800}}>
                 <Image src={Wordpress}  width={100}
-                height={100}/>
+                height={100} loading="lazy"/>
                 </motion.div>
                 </Grid>
                 <Grid item xs={2} sm={3} md={2}>
                 <motion.div whileHover={{scale:1.1}} transition={{type: 'spring', stiffness: 800}}>
                 <Image src={Mapbox}  width={100}
-                height={100}/>
+                height={100} loading="lazy"/>
                 </motion.div>
                 </Grid>
                 <Grid item xs={2} sm={3} md={2}>
                 <motion.div whileHover={{scale:1.1}} transition={{type: 'spring', stiffness: 800}}>
                 <Image src={YAML}  width={100}
-                height={100}/>
+                height={100} loading="lazy"/>
                 </motion.div>
                 </Grid>
                 <Grid item xs={2} sm={3} md={2}>
                 <motion.div whileHover={{scale:1.1}} transition={{type: 'spring', stiffness: 800}}>
                 <Image src={Azure}  width={100}
-                height={100}/>
+                height={100} loading="lazy"/>
                 </motion.div>
                 </Grid>
                 </Grid>
