@@ -33,6 +33,7 @@ var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_Ski
 
 
 function Home({ posts  }) {
+    const downtytyt = "<p>hiiiiii</p>";
     return(/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
         className: "container",
         children: [
@@ -64,6 +65,20 @@ function Home({ posts  }) {
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_ExperiencesComponent__WEBPACK_IMPORTED_MODULE_5__["default"], {
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_SkillsComponent__WEBPACK_IMPORTED_MODULE_6__["default"], {
+            }),
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                children: posts.map(({ image , width , height  })=>/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("li", {
+                        children: [
+                            image,
+                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("br", {
+                            }),
+                            width,
+                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("br", {
+                            }),
+                            height
+                        ]
+                    })
+                )
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                 className: "bottomPadding"
@@ -309,7 +324,7 @@ module.exports = import("framer-motion");;
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [675,664,247,73,529,242,948,229,367], () => (__webpack_exec__(3678)));
+var __webpack_exports__ = __webpack_require__.X(0, [675,664,247,73,529,242,948,367,229], () => (__webpack_exec__(3678)));
 module.exports = __webpack_exports__;
 
 })();

@@ -1,11 +1,4 @@
-//
-//  Header.h
-//  
-//
-//  Created by Rachael Mathew on 12/25/21.
-//
-
-
+import content from './contentExample';
 import React from 'react'
 import { useState, useEffect } from "react";
 import {Link} from 'react-router-dom'
@@ -24,18 +17,32 @@ import Image from 'next/image'
 let theme = createTheme();
 theme = responsiveFontSizes(theme);
 
-function About() {
+const About = ({data}) => {
+    console.log(data);
+    try {
+      const user = JSON.parse(data)
+        
+
+    } catch(err) {
+      console.error(err)
+    }
+
 
     return (
-            <React.Fragment>
+            
+            <>
+            <div>{data && data[0].image}</div>;
             <div className="separator">
             <div className="line"></div>
             <h1 style={{color: 'mediumpurple'}}>About</h1>
             <div className="line"></div>
             </div>
             
+
+            <h1 className={content.index.title}>{content.index.content}</h1>
+            <div dangerouslySetInnerHTML={{__html: content.index.content}}></div>
+
             <Script style={{whiteSpace: 'pre-wrap'}} dangerouslySetInnerHTML={{ __html: `
-               
                 var aboutMe = document.getElementsByClassName("AboutMe")[0];
         aboutMe.innerHTML = "public class Rachael {<br>&emsp;int year = 3;<br>&emsp;String major = 'Computer Science';<br>&emsp;String[] speciality = ['web development', 'mobile development'];<br>&emsp;boolean lovesTaylorSwift = true;<br>}"
 
@@ -83,8 +90,9 @@ function About() {
             </motion.div>
             
             
-            </React.Fragment>
+            </>
     )
 }
+
 
 export default About;

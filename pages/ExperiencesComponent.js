@@ -97,10 +97,10 @@ const Experiences = () => {
                 
                 </motion.div>
                 
-                <div class="radio-list">
-                  <label class="radio" htmlFor="radio__toggle2">
-                <input class="radio__toggle" id="radio__toggle2" type="checkbox" onClick={onClickToggleCube}/>
-                    <span class="radio__span">
+                <div className="radio-list">
+                  <label className="radio" htmlFor="radio__toggle2">
+                <input className="radio__toggle" id="radio__toggle2" type="checkbox" onClick={onClickToggleCube}/>
+                    <span className="radio__span">
                       Show Cube
                     </span>
                   </label>

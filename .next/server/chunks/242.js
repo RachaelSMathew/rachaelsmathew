@@ -151,19 +151,19 @@ const Experiences = ()=>{
                         })
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                        class: "radio-list",
+                        className: "radio-list",
                         children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("label", {
-                            class: "radio",
+                            className: "radio",
                             htmlFor: "radio__toggle2",
                             children: [
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("input", {
-                                    class: "radio__toggle",
+                                    className: "radio__toggle",
                                     id: "radio__toggle2",
                                     type: "checkbox",
                                     onClick: onClickToggleCube
                                 }),
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
-                                    class: "radio__span",
+                                    className: "radio__span",
                                     children: "Show Cube"
                                 })
                             ]
