@@ -44,9 +44,9 @@ function Voice() {
                     var answerTalk = document.getElementsByClassName('answerTalk')[0];
                     var SpeechRecognitionTalk = window.SpeechRecognitionTalk || window.webkitSpeechRecognition;
                     var recognitionTalk = new SpeechRecognitionTalk();
-        recognitionTalk.onstart = function () {
-        blinkingRecord.style.display = "inline-block";
-        buttonTalk.style.display = "none";
+                    recognitionTalk.onstart = function () {
+                    blinkingRecord.style.display = "inline-block";
+                    buttonTalk.style.display = "none";
                     console.log("voice is activiated");
                     contentTalk.innerHTML = "";
                     answerTalk.innerHTML = "";
@@ -63,33 +63,38 @@ function Voice() {
                     const transcript = event.results[current][0].transcript;
                     contentTalk.innerHTML = transcript;
                     console.log(transcript);
-                    if(transcript.includes("how old is Rachel")) {
-                        setTimeout(function(){
-                            answerTalk.style.color = "black";
-                            answerTalk.innerHTML = "She is 21 years old, but doesn't drink :)";
-                        },1000);
-                    }
+                    var hasAnswered = 0;
+        if(transcript.includes("how old is Rachel")) {
+            setTimeout(function(){
+                answerTalk.style.color = "black";
+                answerTalk.innerHTML = "She is 21 years old, but doesn't drink :)";
+            },1000);
+        hasAnswered = 1;
+        }
         if(transcript.includes("who is Rachel")) {
             setTimeout(function(){
                 answerTalk.style.color = "black";
                 answerTalk.innerHTML = "An ambitious girl who's trying her best at life and happiness";
             },1000);
+        hasAnswered = 1;
         }
         
         if(transcript.includes("how tall is Rachel")) {
-        setTimeout(function(){
-            answerTalk.style.color = "black";
-            answerTalk.innerHTML = "She's 7'12";
+            setTimeout(function(){
+                answerTalk.style.color = "black";
+                answerTalk.innerHTML = "She's 7'12";
 
-        },1000);
+            },1000);
+        hasAnswered = 1;
         }
         if(transcript.includes("how is Rachel")) {
             setTimeout(function(){
                 answerTalk.style.color = "black";
                 answerTalk.innerHTML = "Amazing now that you're here!";
             },1000);
+        hasAnswered = 1;
         }
-        else {
+        if(hasAnswered == 0) {
             setTimeout(function(){
                 answerTalk.style.color = "black";
                 answerTalk.innerHTML = "Oops we don't have an answer for that yet!";

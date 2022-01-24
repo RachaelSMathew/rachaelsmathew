@@ -6,7 +6,6 @@ import Experiences from './ExperiencesComponent'
 import Skills from './SkillsComponent'
 
 function Home({ posts }) {
-    const downtytyt = "<p>hiiiiii</p>";
         return (
             <div className="container">
             <Head>
@@ -17,21 +16,10 @@ function Home({ posts }) {
             <div className="stars"></div>
             <div className="twinkling"></div>
             <div className="clouds"></div>
-            <Header/>
+            <Header data={posts}/>
             <About data={posts}/>
-            <Experiences/>
-            <Skills/>
-                <div>
-                {posts.map(({ image, width, height }) => (
-                            <li >
-                              {image}
-                              <br />
-                              {width}
-                              <br />
-                              {height}
-                            </li>
-                          ))}
-                </div>
+            <Experiences data={posts}/>
+            <Skills data={posts}/>
             <div className="bottomPadding"></div>
             <Footer/>
             </div>
@@ -42,9 +30,7 @@ function Home({ posts }) {
         )
 }
 export async function getStaticProps() {
-  // Call an external API endpoint to get posts.
-  // You can use any data fetching library
-  const res = await fetch('https://gist.githubusercontent.com/RachaelSMathew/752f206243d72a355e7eef127957b239/raw/4bec4996463d31544820d92ccb3cfad5099c4e6f/imageURL.json')
+  const res = await fetch('https://gist.githubusercontent.com/RachaelSMathew/752f206243d72a355e7eef127957b239/raw/bdf5300637ff7ea0b84ff33a1fabd80812a6d940/imageURL.json')
     const posts = await res.json()
 
   // By returning { props: { posts } }, the Blog component

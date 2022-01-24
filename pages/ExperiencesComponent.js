@@ -21,13 +21,13 @@ import Cube3d from './Cube'
 import { createTheme, responsiveFontSizes } from '@mui/material/styles';
 import { Typography, ThemeProvider } from '@mui/material';
 
-const Experiences = () => {
-
+const Experiences = ({data}) => {
+console.log(data && data[2].experiencesChangeText.join(''));
     let theme = createTheme();
     theme = responsiveFontSizes(theme);
     
     function onClickToggleCube() {
-        
+   
         if(showCube.checked) {
             cube.style.display = "inline"
             experiencesClass.style.display = "none"
@@ -39,50 +39,10 @@ const Experiences = () => {
     
         return (
                 
-                <React.Fragment>
+                <>
                 <Script
                   dangerouslySetInnerHTML={{
-                    __html: `var text = ["Worked with Azure DevOps, using YAML pipelines, to create Xcode simulator builds, run snapshot tests. Created Veracode Archive and uploaded the scan, created a streamlined YAML pipeline with multiple sub-tasks using parallel jobs and templates for clean, high-efficiency code.", "Created a calendar, which could have events created and added on, as a part of the CYE iPad app. Sending iOS logs to AWS Cloudwatch using AWS Soto Swift Package Manager in Xcode", "Graded students work, tutored students one-on-one, Attended weekly CS 121 lab sessions to help students"];
-            
-                            var showCube = document.getElementsByClassName("radio__toggle")[0];
-                            var toggle = document.getElementsByClassName("radio-list")[0];
-                            var cube = document.getElementsByClassName("hideCubePhone")[0];
-                            var counter = 0;
-                            var experiencesClass = document.getElementsByClassName("changeTextExperiences")[0];
-                            
-                            setInterval(() => {
-                                    experiencesClass.classList.add('hideExperiences');
-                                setTimeout(function (event) {
-                                    experiencesClass.innerHTML = text[counter];
-                                    experiencesClass.classList.remove('hideExperiences');
-                                    counter++;
-                                    if (counter >= text.length) {
-                                        counter = 0;
-                                    }
-                                }, 500);
-
-                            }, 5000);
-            setInterval(() => {
-                if(window.innerWidth >= "600") {
-                    cube.style.display = "inline"
-                    experiencesClass.style.display = "flex"
-                    toggle.style.display = "none"
-         
-                    
-                }
-                if(window.innerWidth < "600") {
-                toggle.style.display = "flex"
-     
-                    if(showCube.checked) {
-                        cube.style.display = "inline"
-                        experiencesClass.style.display = "none"
-                    } else {
-                        cube.style.display = "none"
-                        experiencesClass.style.display = "flex"
-                    }
-                }
-            }, 500)
-            `,
+                    __html: data && data[2].experiencesChangeText.join('')
         }}
       />
                 
@@ -121,13 +81,9 @@ const Experiences = () => {
                 </Box>
             
                 </motion.div>
-                </React.Fragment>
+                </>
                 
         );
 }
 
 export default Experiences;
-
-
-
-

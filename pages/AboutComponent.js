@@ -1,4 +1,3 @@
-import content from './contentExample';
 import React from 'react'
 import { useState, useEffect } from "react";
 import {Link} from 'react-router-dom'
@@ -18,37 +17,17 @@ let theme = createTheme();
 theme = responsiveFontSizes(theme);
 
 const About = ({data}) => {
-    console.log(data);
-    try {
-      const user = JSON.parse(data)
-        
-
-    } catch(err) {
-      console.error(err)
-    }
-
 
     return (
             
             <>
-            <div>{data && data[0].image}</div>;
             <div className="separator">
             <div className="line"></div>
             <h1 style={{color: 'mediumpurple'}}>About</h1>
             <div className="line"></div>
             </div>
-            
 
-            <h1 className={content.index.title}>{content.index.content}</h1>
-            <div dangerouslySetInnerHTML={{__html: content.index.content}}></div>
-
-            <Script style={{whiteSpace: 'pre-wrap'}} dangerouslySetInnerHTML={{ __html: `
-                var aboutMe = document.getElementsByClassName("AboutMe")[0];
-        aboutMe.innerHTML = "public class Rachael {<br>&emsp;int year = 3;<br>&emsp;String major = 'Computer Science';<br>&emsp;String[] speciality = ['web development', 'mobile development'];<br>&emsp;boolean lovesTaylorSwift = true;<br>}"
-
-                   
-                
-                        `
+            <Script style={{whiteSpace: 'pre-wrap'}} dangerouslySetInnerHTML={{ __html: data && data[1].codeEdit
             }}
             />
             
@@ -68,7 +47,7 @@ const About = ({data}) => {
             <ThemeProvider theme={theme}>
             <Typography variant="h4">
             <div className="AboutMe" contentEditable="true" suppressContentEditableWarning={true}>
-            "Hi, I'm Rachael. Welcome to my site! I'm a third year CS Student at UMass Amherst. I love advancing my skills in mobile and web devlopment and write and listen to T-Swift in my free time!"
+            {data && data[1].placeholderForCode}
             </div>
             </Typography>
             </ThemeProvider>
@@ -96,3 +75,8 @@ const About = ({data}) => {
 
 
 export default About;
+
+
+
+
+
