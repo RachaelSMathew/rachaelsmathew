@@ -7,7 +7,7 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import {motion} from 'framer-motion';
-import myPic from '../images/img.png';
+import myPic from '../public/images/img.png';
 import { createTheme, responsiveFontSizes } from '@mui/material/styles';
 import { Typography, ThemeProvider } from '@mui/material';
 import Image from 'next/image'

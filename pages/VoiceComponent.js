@@ -14,7 +14,7 @@ import Grid from '@mui/material/Grid';
 import Script from 'next/script'
 import {motion} from 'framer-motion'
 import Image from 'next/image'
-import blinkingRec from '../images/recordingButton.gif';
+import blinkingRec from '../public/images/recordingButton.gif';
 
 function Voice() {
     

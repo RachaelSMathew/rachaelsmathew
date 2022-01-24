@@ -229,18 +229,18 @@
 }
 
 .stars {
-  background:#000 url(./images/stars.png) repeat top center;
+  background:#000 url(./public/images/stars-2.png) repeat top center;
   z-index:-4;
 }
 
 .twinkling{
-  background:transparent url(./images/twinkling.png) repeat top center;
+  background:transparent url(./public/images/twinkling-2.png) repeat top center;
   z-index:-3;
   animation:move-twink-back 200s linear infinite;
 }
 
 .clouds{
-    background:transparent url(./images/clouds.png) repeat top center;
+    background:transparent url(./public/images/clouds-2.png) repeat top center;
     z-index:-2;
     opacity: .4;
     animation:move-clouds-back 200s linear infinite;
@@ -441,7 +441,7 @@ label { margin-right: 10px; }
       justify-content: space-between;
 }
 .downloadIcon {
-    content: url(./images/downloadIcon.png);
+    content: url(./public/images/downloadIcon.png);
     width:46px;
     cursor: pointer;
     height:46px;
@@ -455,14 +455,14 @@ label { margin-right: 10px; }
  
 }
 .happy {
-    content:url(./images/happy_face.png);
+    content:url(./public/images/happy_face.png);
     width: 40px;
     height: 40px;
     z-index: 9;
     
 }
 .sad {
-    content:url(./images/sad_face.png);
+    content:url(./public/images/sad_face.png);
     width: 40px;
     height: 40px;
     z-index: 9;

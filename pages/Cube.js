@@ -2,12 +2,12 @@ import * as THREE from "three";
 import Cube from 'react-3d-cube';
 import React from 'react'
 import { useEffect, useRef } from "react";
-import Nuance from "../images/Nuance-icon.png";
-import UMass from "../images/UMass-icon.png";
-import CYE from "../images/CYE-icon.png";
-import FP from "../images/FP-icon.png";
-import Neb from "../images/Neb-icon.png";
-import Neb2 from "../images/Neb2-icon.png";
+import Nuance from "../public/images/Nuance-icon.png";
+import UMass from "../public/images/UMass-icon.png";
+import CYE from "../public/images/CYE-icon.png";
+import FP from "../public/images/FP-icon.png";
+import Neb from "../public/images/Neb-icon.png";
+import Neb2 from "../public/images/Neb2-icon.png";
 import Image from 'next/image'
 
 const Cube3d = () => {

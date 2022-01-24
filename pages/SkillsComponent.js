@@ -15,18 +15,18 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import {motion} from 'framer-motion'
-import Java from '../images/icons-java.png';
-import Swift from '../images/icons-swift.png';
-import YAML from '../images/icons-yaml.png';
-import CSS from '../images/icons-css.png';
-import HTML5 from '../images/icons-html5.png';
-import Azure from '../images/icons-azure.png';
-import SQL from '../images/icons-sql.png';
-import Mapbox from '../images/icons-mapbox.png';
-import AWSS3 from '../images/aws-s3-icon.svg';
-import AWSCognito from '../images/icons-aws-cognito.png';
-import Wordpress from '../images/icons-wordpress.png';
-import JavaScript from '../images/icons-javascript.png';
+import Java from '../public/images/icons-java.png';
+import Swift from '../public/images/icons-swift.png';
+import YAML from '../public/images/icons-yaml.png';
+import CSS from '../public/images/icons-css.png';
+import HTML5 from '../public/images/icons-html5.png';
+import Azure from '../public/images/icons-azure.png';
+import SQL from '../public/images/icons-sql.png';
+import Mapbox from '../public/images/icons-mapbox.png';
+import AWSS3 from '../public/images/aws-s3-icon.svg';
+import AWSCognito from '../public/images/icons-aws-cognito.png';
+import Wordpress from '../public/images/icons-wordpress.png';
+import JavaScript from '../public/images/icons-javascript.png';
 import Image from 'next/image'
 
 const Skills = () => {
